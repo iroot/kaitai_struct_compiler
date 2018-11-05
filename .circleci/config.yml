@@ -18,7 +18,7 @@ jobs:
           - v1-dependencies-
       - run: cat /dev/null | sbt compilerJVM/universal:packageBin
       - store_artifacts:
-          path: jvm/target/scala-2.12/kaitai-struct-compiler_*.zip
+          path: jvm/target
       - save_cache:
           paths:
             - ~/.m2
